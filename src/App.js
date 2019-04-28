@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 import react from './assets/react.png';
 import './index.styl';
@@ -9,14 +8,12 @@ class App extends Component {
 
   static propTypes = {};
 
-  state = {};
-
   render() {
     return (
-      <div className={'AppContainer'}>
-        <img src={react} alt="React" />
+      <div className='AppContainer'>
+        <img src={react} alt='React' />
         <h3>React Edge Boilerplate</h3>
-        <div className={'list'}>
+        <div className='list'>
           <div>This template includes:</div>
           <ul>
             <li>"normalize.css": "^8.0.1"</li>

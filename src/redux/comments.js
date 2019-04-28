@@ -8,10 +8,8 @@ import { createAction } from 'redux-actions';
 export const FETCH = createAction('comments/FETCH');
 
 export default typeToReducer({
-	[FETCH]: (state, action) => {
-		return state;
-	},
+  [FETCH]: (state, action) => state,
 }, {
-	comments: [],
-	isFetching: false,
+  comments: [],
+  isFetching: false,
 });
